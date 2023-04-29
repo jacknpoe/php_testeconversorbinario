@@ -58,10 +58,7 @@
 				if( strlen( $caracter) < 8)
 					$caracter = str_pad( $caracter, 8, "0", STR_PAD_LEFT);
 
-				if( $contador > 0 )
-				{
-					$binario = $binario . " ";
-				}
+				if( $contador > 0 )	$binario = $binario . " ";
 
 				$binario = $binario . $caracter;
 			}
