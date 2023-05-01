@@ -39,10 +39,10 @@
 			<p>Tipo: <input type="radio" name="tipo" value="ASCIIParaBinario" <?php if( $tipo === "ASCIIParaBinario") echo "checked"; ?> autofocus>ASCII para Binário
 				     <input type="radio" name="tipo" value="BinarioParaASCII" <?php if( $tipo === "BinarioParaASCII") echo "checked"; ?>>Binário para ASCII</p>
 			<p><label for="origem">Origem</label><br>
-			<textarea name="origem" rows="4" cols="50"><?php echo $origem; ?></textarea></p>
+			<textarea name="origem" rows="4" cols="50"><?php echo htmlspecialchars( $origem, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?></textarea></p>
 			<p><input type="submit" name="converter" value="Converter"></p>
 			<p><label for="resultado">Resultado</label><br>
-			<textarea disabled name="resultado" rows="4" cols="50"><?php echo $resultado; ?></textarea></p>
+			<textarea disabled name="resultado" rows="4" cols="50"><?php echo htmlspecialchars( $resultado, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, "ISO-8859-1"); ?></textarea></p>
 		</form>
 
 		<br><br>
